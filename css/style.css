@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin:0; padding:0;}
+li { list-style:none;}
+a { text-decoration:none;}
+img { border:none;}
+body { background:#ececec; margin-top:50px;}
+
+#automatic { width:960px;height:344px; margin:0 auto; position:relative;}
+
+.prev {  width:76px; height:122px; position:absolute; top:111px;left:60px; }
+.prev .ico,.next .ico { width:76px; height:122px; position:absolute; top:0; left:0; z-index:4; }
+.prev .ico { background:url(../img/prev.png) no-repeat;}
+.next .ico { background:url(../img/next.png) no-repeat;}
+
+
+.prev_div,.next_div { width:120px; height:122px; background:blue; filter:alpha(opacity:0); opacity:0; position:absolute; top:111px;  z-index:5;}
+
+.prev_div { left:60px; z-index:5;}
+.next_div { right:60px; z-index:5;}
+.next { width:76px; height:122px; position:absolute; top:111px; right:60px; z-index:4;}
+
+
+ul { width:960px; height:344px; position:absolute; top:0; left:0;}
+ul li { text-align:center; position:absolute;}
+
+.pos_0 {  top:147px; left:-30px; filter:alpha(opacity:0); opacity:0; z-index:1;}
+.pos_0 img { width:100px; }
+.pos_1 { top:104px; left:0px; filter:alpha(opacity:60); opacity:0.6; z-index:2;}
+.pos_1 img { width:270px;}
+.pos_2 {  top:43px; left:50px; filter:alpha(opacity:80); opacity:0.8; z-index:3; }
+.pos_2 img { width:510px;}
+.pos_3 {  top:0px; left:140px; filter:alpha(opacity:100); opacity:1; z-index:4;}
+.pos_3 img { width:680px;}
+.pos_4 {  top: 43px; left:400px; filter:alpha(opacity:80); opacity:0.8; z-index:3;}
+.pos_4 img { width:510px;}
+.pos_5 { top: 104px; left:690px; filter:alpha(opacity:60); opacity:0.6; z-index:2;}
+.pos_5 img { width:270px;}
+.pos_6 { top:147px; left:890px; filter:alpha(opacity:0); opacity:0;  z-index:1;}
+.pos_6 img {width:100px;  }
+/*js中获取的是left,所以这里全部用的是left*/
+#footer  { width:960px; height:30px; margin: 0 auto; text-align:center;}
+#footer p { height:30px; line-height:30px; padding:10px;}
+#footer a { color:#000;}
